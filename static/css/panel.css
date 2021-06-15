@@ -1,0 +1,126 @@
+.subscription{
+    display:none !important;
+}
+.panel-area{
+    width:90%;
+    margin:auto;
+}
+.panel-area h2{
+    text-align:center;
+    text-shadow: 2px 2px 4px white;
+}
+.bloglist{
+    display:flex;
+    flex-direction: column;
+    border-top:3px dashed white;
+
+}
+.post-item{
+    max-width:100%;
+    display:flex;
+    flex-direction:row;
+    align-content:space-between;
+    /*justify-content:center;*/
+    border-bottom:3px dashed white;
+    margin-bottom:5px;
+    padding:5px 0;
+}
+
+.post-title{
+    width:80%;
+    min-width:50%;
+    text-overflow:ellipsis;
+    padding:0 10px;
+    margin:auto;
+}
+.visibility{
+    margin:auto;
+}
+.edit{
+    margin:auto;
+}
+
+.delete{
+    margin:auto;
+}
+.add-new{
+    width:100%;
+    margin:20px auto;
+}
+a{
+    text-decoration:none;
+}
+.add-new a{
+    display:inline-block;
+    text-align:center;
+    font-size:2.5em;
+    /*padding:5px 5px;*/
+    width:100%;
+    margin:auto;
+    border:dashed 3px white;
+    border-radius:5%;
+    text-decoration:none;
+    color:white;
+    text-shadow:2px 2px 4px white;
+}
+
+input[type=checkbox].visibility{
+    appearance:none;
+    -webkit-appearance: none;
+    position:relative;
+    outline:none;
+    width:30px;
+    height:20px;
+    /*border:dashed 1px white;*/
+    border-radius: 50%;
+    /*background-color:deepskyblue;*/
+}
+input[type=checkbox].visibility::before{
+    content:"\1f441";
+    position:absolute;
+    width:30px;
+    height:20px;
+    font-size:2em;
+    color:gray;
+    top:-11px;
+    left:0;
+}
+input[type=checkbox].visibility:checked::before{
+    color:white;
+    /*text-shadow: 2px 2px 1px white;*/
+}
+
+button.delete,a.edit,button.publish{
+    outline:none;
+    border:none;
+    font-weight: 400;
+    font-size:1em;
+    background:transparent;
+    color:white;
+    padding:5px;
+    margin:auto;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+button.delete:hover,a.edit:hover,button.publish:hover{
+    font-size:1.3em;
+    padding:0 3px;
+    text-shadow:2px 2px 4px white;
+}
+
+select.cat{
+    padding:3px 5px;
+    line-height: 1.5em;
+    background-color:transparent;
+    color:white;
+    font-size:20px;
+    border:none;
+    outline: none;
+}
+
+select.cat:focus{
+    background-color:rgba(0,0,0,0.8);
+}

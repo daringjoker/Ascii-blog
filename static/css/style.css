@@ -1,0 +1,66 @@
+.main {
+    width: 90%;
+    margin: auto;
+}
+
+.main .intro {
+    text-align: justify;
+    padding: 20px;
+
+}
+
+
+.content {
+    display: grid;
+    min-height: 150vh;
+    grid-template-areas: 'highlight highlight highlight programming programming'
+                         'highlight highlight highlight programming programming'
+                         'highlight highlight highlight  security    security'
+                         'general general general        security    security'
+                         'general general general       electronics electronics'
+                         'project project project       electronics electronics';
+    grid-gap: 0;
+    border-bottom: dashed 3px white;
+    border-right: dashed 3px white;
+}
+
+.content > div {
+    border-top: dashed 3px white;
+    border-left: dashed 3px white;
+    padding: 10px 5px;
+}
+
+.sec-hdr {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px white;
+}
+.box-content ul{
+    counter-reset: cnt;
+}
+
+.box-content ul li {
+    list-style:none;
+    display: block;
+    margin: 3px 0;
+    counter-increment: cnt;
+}
+.box-content ul li:before{
+    content:"#"counter(cnt);
+    padding-right:0.5em;
+    text-shadow: 2px 2px 4px white;
+    font-size:1.1em;
+    color:white;
+}
+
+.box-content ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+.box-content ul li a:hover{
+    text-shadow: 2px 2px 4px white;
+    /*font-size:1em;*/
+}

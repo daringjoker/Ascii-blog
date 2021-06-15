@@ -1,0 +1,19 @@
+.main{
+    margin:auto;
+    width:90%;
+}
+.logocontainer{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin:50px auto;
+}
+.logo{
+    margin:auto;
+}
+p{
+    text-align:justify;
+    font-weight:400;
+    font-size:1.2em;
+}

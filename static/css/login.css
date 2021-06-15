@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+    background-color:rgba(0,0,0,0.8);
+    font-family:"Inconsolata","sans-serif","monospace";
+}
+.main{
+    display:flex;
+    flex-direction: row;
+    border:3px dashed white;
+    padding:30px;
+}
+.centerize form{
+    margin-left:25px;
+    padding-left:25px;
+    border-left: white dashed 3px;
+    display:flex;
+    flex-direction: column;
+}
+.centerize form input{
+    width:40vw;
+    padding:10px;
+    margin-top:10px;
+    background-color:transparent;
+    color:white;
+    font-size:20px;
+    text-shadow: 2px 2px 4px white;
+    border-radius:5px;
+    border:dashed white 3px;
+    outline: none;
+}
+.centerize form input[type=password]{
+
+}
+.centerize form label{
+    color:white;
+    font-weight: bold;
+    font-size:1.5em;
+    display:block;
+    margin-top:20px;
+    text-shadow: 2px 2px 4px white;
+}
+
+header img{
+    filter:invert(100%);
+}
+small{
+    color:white;
+    text-shadow: 2px 2px 4px white;
+    font-size:1.2em;
+    margin:15px auto;
+}
+small a{
+    color:white;
+    text-decoration: none;
+}
+small a:hover{
+    text-decoration:underline;
+}

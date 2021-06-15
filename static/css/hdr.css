@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+*{
+  margin:0;
+  box-sizing: border-box;
+}
+body{
+  background-color:rgba(0,0,0,0.8);
+  font-family:"Inconsolata","sans-serif","monospace";
+  color:white;
+  position:relative;
+}
+.hdr{
+  position:relative;
+  font-size:64px;
+  font-weight: 200;
+  text-align:center;
+  margin-top:30px;
+  padding:5px 5px;
+  text-shadow: 2px 2px 4px white;
+
+}
+
+nav ul{
+  display:flex;
+  flex-direction:row;
+  width:90%;
+  margin: 20px auto;
+  padding:2px 0;
+  font-size:26px;
+  justify-content: center;
+  align-content: space-around;
+  border-top: 3px dashed white;
+  border-bottom:3px dashed white;
+}
+
+nav ul li{
+  list-style:None;
+  display:block;
+  margin: auto;
+}
+#logout{
+  margin-left:3px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  }
+
+footer{
+  width:90%;
+  margin:40px auto;
+  align-content: center;
+  text-shadow: 2px 2px 4px white;
+
+}
+
+footer .subscription{
+
+  padding:10px 50px;
+  display:flex;
+  flex-direction: column;
+  width:90vw;
+  justify-content: center;
+  align-items:center;
+
+}
+
+footer .info{
+  border-top: 3px dashed white;
+  border-bottom:3px dashed white;
+  text-align:center;
+  padding:10px;
+}
+#subscribe {
+  display:flex;
+  flex-direction: row;
+}
+#subscribe input[type=email]{
+  width:40vw;
+  padding:10px;
+  background-color:transparent;
+  color:white;
+  font-size:20px;
+  border-radius:5px;
+  border:dashed white 3px;
+  outline: none;
+}
+#subscribe input[type=email]:focus{
+  outline:none;
+  }
+#subscribe input[type=submit]{
+  background-color:transparent;
+  color: white;
+  font-size:20px;
+  text-shadow: 2px 2px 4px white;
+  border:dashed white 3px;
+  border-radius:10px;
+  padding:5px 25px;
+  margin-left:50px;
+  cursor:pointer;
+
+}
+#subscribe input[type=submit]:hover {
+  background-color:rgba(0,0,0,0.2);
+  border:dot-dash white 3px;
+
+}
+#subscribe input[type=submit]:active,#subscribe input[type=submit]:focus {
+  border:dot-dash white 3px;
+  outline:none;
+}
+#sub-focus{
+  text-decoration: none;
+  color:white;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px white;
+}
+.sub-focus{
+  text-align:center;
+  font-size:1.3em;
+  margin:10px 0;
+}
+.logo{
+ /*transform:scale(0.1);*/
+  width:400px;
+  height:240px;
+  filter:invert(1);
+  padding:0;
+  margin:auto;
+}
+
+.links{
+  width:max-content;
+  margin:auto;
+  }
+.links a{
+  color:white;
+  text-decoration: none;
+}
+
+.links a:hover{
+  text-decoration:underline;
+}
